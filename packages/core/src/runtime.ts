@@ -431,7 +431,7 @@ export class AgentRuntime implements IAgentRuntime {
             elizaLogger.warn("No action found in the response content.");
             return;
         }
-
+        console.log("Processing actions for", responses[0]);
         const normalizedAction = responses[0].content.action
             .toLowerCase()
             .replace("_", "");
